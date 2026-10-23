@@ -1,0 +1,36 @@
+name: 작업
+description: 구현, 설정 등 일반적인 작업 단위를 등록합니다
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 작업 내용
+      description: 무엇을, 왜 해야 하는지 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: 세부 작업
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+    validations:
+      required: true
+  - type: input
+    id: due
+    attributes:
+      label: 기한 (선택)
+      placeholder: "예: 2026-10-30"
+  - type: textarea
+    id: notes
+    attributes:
+      label: 참고 사항 (선택)
