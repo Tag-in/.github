@@ -1,0 +1,32 @@
+name: 리팩터링
+description: 동작 변경 없이 코드 구조나 품질을 개선합니다
+title: "[Refactor] "
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 현재 문제
+      description: 지금 구조의 어떤 점이 왜 문제인지 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: 개선 방향
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 영향 범위
+      description: 변경되는 모듈, 파일, 인터페이스를 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: verify
+    attributes:
+      label: 검증 방법
+      description: 동작이 바뀌지 않았음을 어떻게 확인할지 적어주세요.
+    validations:
+      required: true
