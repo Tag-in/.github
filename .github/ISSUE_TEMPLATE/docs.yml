@@ -1,0 +1,26 @@
+name: 문서
+description: 문서 추가나 수정이 필요한 부분을 등록합니다
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: 대상 문서
+      placeholder: "예: README.md, API 명세, 설치 가이드"
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: 변경 내용
+      description: 추가하거나 수정할 내용을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 변경 사유
+      description: 어떤 혼란이나 누락이 있어서 필요한지 적어주세요.
+    validations:
+      required: true
